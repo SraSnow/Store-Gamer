@@ -20,14 +20,20 @@
 
     <section class="product-details">
         <h2>Teclado Husky 60% RGB</h2>
-        <img src="https://cdn.discordapp.com/attachments/1186127229785219152/1249923783960035451/keyboard.jpg" alt="Teclado Husky 60% RGB">
+        <img src="https://cdn.discordapp.com/attachments/1186127229785219152/1249923784123875339/download.jpg?ex=6669ba7c&is=666868fc&hm=3a17d560f146ac0c79423c656817519c996ab97749815898625e878f6d3058bc&" alt="Teclado Husky 60% RGB">
         <p>Preço: R$ 250,00</p>
         <button id="buyButton">Comprar</button>
     </section>
 
     <section id="checkoutForm" class="hidden">
         <h2>Informações de Compra</h2>
-        <form>
+        <form id="purchaseForm">
+            <label for="fullName">Nome Completo:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+
             <label for="address">Endereço de Entrega:</label>
             <input type="text" id="address" name="address" required>
 

@@ -20,14 +20,20 @@
 
     <section class="product-details">
         <h2>Mouse Redragon</h2>
-        <img src="https://cdn.discordapp.com/attachments/1186127229785219152/1249924135782584341/mouse.jpg" alt="Mouse Redragon">
+        <img src="https://cdn.discordapp.com/attachments/1186127229785219152/1249924135610482739/mouse-gamer-redragon-storm-rgb-12400dpi-7-botoes-preto-m808-rgb_1610042877_g.jpg?ex=6669bad0&is=66686950&hm=3cee627ff7a222accd84cf2de71c58d10f6e3b9e2ea4f2a647a8d73cbf730928&" alt="Mouse Redragon">
         <p>Preço: R$ 150,00</p>
         <button id="buyButton">Comprar</button>
     </section>
 
     <section id="checkoutForm" class="hidden">
         <h2>Informações de Compra</h2>
-        <form>
+        <form id="purchaseForm">
+            <label for="fullName">Nome Completo:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+
             <label for="address">Endereço de Entrega:</label>
             <input type="text" id="address" name="address" required>
 
@@ -39,4 +45,13 @@
         <h2>Forma de Pagamento</h2>
         <p>Escolha a forma de pagamento:</p>
         <button type="button" id="pixButton">PIX</button>
-        <div id="pixDetails
+        <div id="pixDetails" class="hidden"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Loja de Produtos para Computadores. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

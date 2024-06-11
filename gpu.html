@@ -20,14 +20,20 @@
 
     <section class="product-details">
         <h2>Placa de Vídeo RX550</h2>
-        <img src="https://cdn.discordapp.com/attachments/1186127229785219152/1249923017354645575/gpu.jpg" alt="Placa de Vídeo RX550">
+        <img src="https://cdn.discordapp.com/attachments/1186127229785219152/1249923017107046555/placa-de-video-rx-550-amd-pcyes-dual-fan-projeto-edge-4gb-gddr5-128-bits-pvex5504gbdf_1709840921_g.jpg?ex=6669b9c5&is=66686845&hm=5ed20a1b04b99b330393d55c2082cf2b2cffefc17e8d262e49e982967e696709&" alt="Placa de Vídeo RX550">
         <p>Preço: R$ 700,00</p>
         <button id="buyButton">Comprar</button>
     </section>
 
     <section id="checkoutForm" class="hidden">
         <h2>Informações de Compra</h2>
-        <form>
+        <form id="purchaseForm">
+            <label for="fullName">Nome Completo:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+
             <label for="address">Endereço de Entrega:</label>
             <input type="text" id="address" name="address" required>
 
