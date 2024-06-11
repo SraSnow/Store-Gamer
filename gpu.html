@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placa de Vídeo RX550</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Loja de Produtos para Computadores</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-details">
+        <h2>Placa de Vídeo RX550</h2>
+        <img src="https://cdn.discordapp.com/attachments/1186127229785219152/1249923017354645575/gpu.jpg" alt="Placa de Vídeo RX550">
+        <p>Preço: R$ 700,00</p>
+        <button id="buyButton">Comprar</button>
+    </section>
+
+    <section id="checkoutForm" class="hidden">
+        <h2>Informações de Compra</h2>
+        <form>
+            <label for="address">Endereço de Entrega:</label>
+            <input type="text" id="address" name="address" required>
+
+            <button type="button" id="paymentButton">Escolher Forma de Pagamento</button>
+        </form>
+    </section>
+
+    <section id="paymentForm" class="hidden">
+        <h2>Forma de Pagamento</h2>
+        <p>Escolha a forma de pagamento:</p>
+        <button type="button" id="pixButton">PIX</button>
+        <div id="pixDetails" class="hidden"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Loja de Produtos para Computadores. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

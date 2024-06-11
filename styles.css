@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    color: #8e44ad;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 2em 0;
+    background-color: #2c3e50;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h2 {
+    color: #9b59b6;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em;
+    background-color: #2c3e50;
+}
+
+.product-card {
+    background-color: #34495e;
+    border: 1px solid #8e44ad;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-details {
+    text-align: center;
+    padding: 2em;
+    background-color: #2c3e50;
+}
+
+.product-details img {
+    max-width: 50%;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+button {
+    background-color: #8e44ad;
+    color: #ffffff;
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #732d91;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+form label {
+    margin-bottom: 0.5em;
+}
+
+form input {
+    padding: 0.5em;
+    border: 1px solid #8e44ad;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    width: 80%;
+    max-width: 500px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 1em;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.verifying-animation {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.spinner {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #8e44ad;
+    border-top: 5px solid #ffffff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.almost-yours {
+    color: #9b59b6;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
